@@ -1,0 +1,241 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Big mart sales prediction</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link href="C:\Users\shanm\OneDrive\Desktop\titanic\app.py" rel='script'>
+        <script src="C:\Users\shanm\OneDrive\Desktop\titanic\app.py"></script>
+        <style>
+          *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #166bb6;
+    background-image: url("Twitter-Gif.png");
+   
+  }
+
+  form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="age"],
+  input[type="siblings"],
+  input[type="parents"],
+  input[type="fair"],
+  input[type="number"],
+  input[type="search"],
+  input[type="pred"],
+
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 10px 4px 8px 20px;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: rgb(228, 74, 47);
+    background-color: rgb(50, 98, 126);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid FBCEB1;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+  
+        </style>
+    </head>
+    <body img src=("Twitter-Gif.png")>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="" method="post">
+        <h1><marquee bgcolor="FBCEB1">Big mart sale predition</marquee></h1>
+        
+        <fieldset>
+          
+            
+        
+
+
+            
+          
+          <label for="Item_Weight" class="ph-area">Enter Item Weight</label>
+          <input type="text" name="Item_Weight" id="Item_Weight" class="form-control" required>
+
+          <div class="form-group">
+            <select class="form-control" name="Item_Fat_Content" required="required">
+                <option value="" selected>Item Fat Content</option>
+                <option value="1">Low Fat</option>
+                <option value="2">Regular</option>
+                <option value="0">High Fat</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="Item_Visibility" class="ph-area">Enter Item Visibility</label>
+          <input type="text" name="Item_Visibility" id="Item_Visibility" class="form-control" required>
+          
+      </div>
+      <div class="form-group">
+        <select class="form-control chosenn" name="Item_Type" required="required">
+    </div>
+    <option value="" selected>Item Type</option>
+    <option value="0">Baking Goods</option>
+    <option value="1">Breads</option>
+    <option value="2">Breakfast</option>
+    <option value="3">Canned</option>
+    <option value="4">Dairy</option>
+    <option value="5">Frozen Foods</option>
+    <option value="6">Fruits and Vegetables</option>
+    <option value="7">Hard Drinks</option>
+    <option value="8">Health and Hygiene</option>
+    <option value="9">Household</option>
+    <option value="10">Meat</option>
+    <option value="11">Others</option>
+    <option value="12">Seafood</option>
+    <option value="13">Snack Foods</option>
+    <option value="14">Soft Drinks</option>
+    <option value="15">Starchy Foods</option>
+    </select>
+    </select>
+</div>
+<div class="form-group">
+  <label for="Item_MRP" class="ph-area">Enter Item MRP Enter Item Visibility</label>
+  <input type="text" name="Item_MRP" id="Item_MRP" class="form-control" required>
+  
+</div>
+
+<div class="form-group">
+  <label for="Outlet_Establishment_Year" class="ph-area">Outlet Establishment Year (YYYY)</label>
+  <input type="text" name="Outlet_Establishment_Year" id="Outlet_Establishment_Year" class="form-control" required>
+  
+</div>
+
+<div class="form-group">
+  <select class="form-control chosenn" name="Outlet_Size" required="required">
+      <option value="" selected>outlet_size</option>
+      <option value="0">High</option>
+      <option value="1">Medium</option>
+      <option value="2">Small</option>
+  </select>
+</div>
+<div class="form-group">
+  <select class="form-control chosenn" name="Outlet_Location_Type" required="required">
+      <option value="" selected>outlet_location_type</option>
+      <option value="0">Tier 1</option>
+      <option value="1">Tier 2</option>
+      <option value="2">Tier 3</option>
+  </select>
+</div>
+<div class="form-group">
+  <select class="form-control chosenn" name="Outlet_Type" required="required">
+      <option value="" selected>outlet_type</option>
+      <option value="0">Grocery Store</option>
+      <option value="1">Supermarket Type1</option>
+      <option value="2">Supermarket Type2</option>
+      <option value="3">Supermarket Type3</option>
+  </select>
+</div>
+
+
+       
+
+
+          
+       
+
+       
+       
+        <button type="submit">Predict</button>
+
+
+          <label for="pred"> Prediction Result:</label>
+          <input type="pred" id="pred" name="prediction" placeholder= "{{prediction_text}}">
+        </fieldset>
+       </form>
+    </div>
+      </div>
+
+    </body>
+</html>
